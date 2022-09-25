@@ -51,12 +51,12 @@ button@{n}, button@{x}, input[type=submit], [btn] {
 	// primary button styling
 	
 	&[primary] {
-		border-color: darken(@primary, 6%);
+		border-color: @primary;
 		background: @primary;
 		color: @primary--;
 		font-weight: 700;
 		
-		&:not(:disabled):hover { background: darken(@primary, 6%)	}
+		&:not(:disabled):hover { background: @primary, 6%	}
 	}
 	
 	&[round] {
